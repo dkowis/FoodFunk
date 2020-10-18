@@ -108,10 +108,10 @@ public class FoodFunk
 			event.getRegistry().register(new RottedItem().setRegistryName("rotted_item"));
 			event.getRegistry().register(new BiodegradableItem().setRegistryName("biodegradable_item"));
 
-			event.getRegistry().register(new BlockItem(ModObjectHolder.LarderBlock, new Item.Properties().group(setup.itemGroup).setTEISR(() -> LarderItemStackTileEntityRenderer::new)).setRegistryName("larder"));
-			event.getRegistry().register(new BlockItem(ModObjectHolder.IceboxBlock, new Item.Properties().group(setup.itemGroup).setTEISR(() -> IceboxItemStackTileEntityRenderer::new)).setRegistryName("icebox"));
-			event.getRegistry().register(new BlockItem(ModObjectHolder.EskyBlock, new Item.Properties().group(setup.itemGroup).setTEISR(() -> EskyItemStackTileEntityRenderer::new)).setRegistryName("esky"));
-			event.getRegistry().register(new BlockItem(ModObjectHolder.FreezerBlock, new Item.Properties().group(setup.itemGroup).setTEISR(() -> FreezerItemStackTileEntityRenderer::new)).setRegistryName("freezer"));
+			event.getRegistry().register(new BlockItem(ModObjectHolder.LarderBlock, new Item.Properties().group(setup.itemGroup).setISTER(() -> LarderItemStackTileEntityRenderer::new)).setRegistryName("larder"));
+			event.getRegistry().register(new BlockItem(ModObjectHolder.IceboxBlock, new Item.Properties().group(setup.itemGroup).setISTER(() -> IceboxItemStackTileEntityRenderer::new)).setRegistryName("icebox"));
+			event.getRegistry().register(new BlockItem(ModObjectHolder.EskyBlock, new Item.Properties().group(setup.itemGroup).setISTER(() -> EskyItemStackTileEntityRenderer::new)).setRegistryName("esky"));
+			event.getRegistry().register(new BlockItem(ModObjectHolder.FreezerBlock, new Item.Properties().group(setup.itemGroup).setISTER(() -> FreezerItemStackTileEntityRenderer::new)).setRegistryName("freezer"));
 		}
 
 		

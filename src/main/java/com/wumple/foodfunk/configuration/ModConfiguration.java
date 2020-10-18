@@ -126,7 +126,7 @@ public class ModConfiguration
 	}
 
 	@SubscribeEvent
-	public static void onReload(final ModConfig.ConfigReloading configEvent)
+	public static void onReload(final ModConfig.ModConfigEvent configEvent)
 	{
 	}
 
@@ -160,5 +160,6 @@ public class ModConfiguration
 		}, ConfigHandler.preserving.getMap());
 
 		ConfigHandler.postinit();
+		config.getConfigData();
 	}
 }

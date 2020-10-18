@@ -6,13 +6,18 @@ import com.wumple.util.xchest2.XChestTileEntityRenderer;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.state.properties.ChestType;
 import net.minecraft.util.ResourceLocation;
 
 public class EskyTileEntityRenderer extends XChestTileEntityRenderer<EskyTileEntity>
 {
 	private static ResourceLocation TEXTURE_NORMAL = new ResourceLocation(Reference.MOD_ID, "textures/entity/esky.png");
-	
+
+	public EskyTileEntityRenderer(TileEntityRendererDispatcher rendererDispatcherIn) {
+		super(rendererDispatcherIn);
+	}
+
 	@Override
 	protected ResourceLocation getTexture()
 	{

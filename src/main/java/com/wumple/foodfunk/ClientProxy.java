@@ -19,10 +19,11 @@ public class ClientProxy implements IProxy
 	@Override
 	public void init()
 	{
-		ClientRegistry.bindTileEntitySpecialRenderer(LarderTileEntity.class, new LarderTileEntityRenderer());
-		ClientRegistry.bindTileEntitySpecialRenderer(IceboxTileEntity.class, new IceboxTileEntityRenderer());
-		ClientRegistry.bindTileEntitySpecialRenderer(EskyTileEntity.class, new EskyTileEntityRenderer());
-		ClientRegistry.bindTileEntitySpecialRenderer(FreezerTileEntity.class, new FreezerTileEntityRenderer());
+		//Disable all the special entities for this mod - beepdog 16 Oct 2020
+//		ClientRegistry.bindTileEntitySpecialRenderer(LarderTileEntity.class, new LarderTileEntityRenderer());
+//		ClientRegistry.bindTileEntitySpecialRenderer(IceboxTileEntity.class, new IceboxTileEntityRenderer());
+//		ClientRegistry.bindTileEntitySpecialRenderer(EskyTileEntity.class, new EskyTileEntityRenderer());
+//		ClientRegistry.bindTileEntitySpecialRenderer(FreezerTileEntity.class, new FreezerTileEntityRenderer());
 
 		//ScreenManager.registerFactory(ModObjectHolder.LarderBlock_Container, LarderScreen::new);
 		//ScreenManager.registerFactory(ModObjectHolder.IceboxBlock_Container, IceboxScreen::new);
